@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Sensor Statuses
+    </title>
+  </head>
+
+  <body>
+    <div>
+
+      <p>
+        A temporary location to display sensor values.
+      </p>
+
+      {% for s in sensor_dict %}
+      </p>
+        {{ s['type'] }} sensor at {{ s['location'] }} has a value of {{ s['value'] }} and a status of {{ s['status'] }} on {{ s['timestmp'] }}.
+      </p>
+      {% endfor %}
+
+    </div>
+  </body>
+</html>
